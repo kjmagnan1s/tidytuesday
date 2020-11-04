@@ -2,9 +2,7 @@
 pagetitle: '#tidytuesday week 45'
 author: "Kevin Magnan"
 date: "11/3/2020"
-output:
-  html_document:
-    keep_md: true
+output: github_document
 ---
 <br>
 ```{r global-options, include=FALSE}
