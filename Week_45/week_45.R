@@ -24,8 +24,4 @@ ggplotly(
          x = "Count of Ikea Furniture By Name",
          y = "Price Per Unit"
     ), tooltip = "text"
-) %>% 
-  layout(annotations = list(x = 40,
-                            y = 1200,
-                            showarrow = F,
-                            text = "Hover for more details!"))
+)
