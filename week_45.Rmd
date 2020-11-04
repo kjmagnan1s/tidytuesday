@@ -1,10 +1,11 @@
 ---
-title: '#tidytuesday week 45'
+pagetitle: '#tidytuesday week 45'
 author: "Kevin Magnan"
 date: "11/3/2020"
-output: html_document
+output:
+  html_document: default
 ---
-
+<br>
 ```{r global-options, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 
@@ -15,11 +16,9 @@ pacman::p_load(
 )
 ```
 
-```{r}
-ikea <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-11-03/ikea.csv')
-```
-
 ```{r fig.width=10, fig.height=5}
+ikea <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-11-03/ikea.csv')
+
 ggplotly(
   ikea %>%
   mutate(price_usd = price * 0.27) %>%
@@ -35,11 +34,12 @@ ggplotly(
   geom_point(aes(size = price_per_unit, color = category)) +
     theme(legend.title = element_blank()) +
     labs(title = "TidyTuesday Week 45: Ikea Furniture | Made by @KevinMagnan",
-         x = "Count, Ikea Furniture By Name",
+         x = "Count of Ikea Furniture By Name",
          y = "Price Per Unit"
   ), tooltip = "text"
 ) %>% 
   layout(annotations = list(x = 40,
-                            y = 1000,
-                            text = "Hover for more!"))
+                            y = 1200,
+                            showarrow = F,
+                            text = "Hover for more details!"))
 ```
