@@ -18,7 +18,7 @@ pacman::p_load(
 ```{r fig.width=10, fig.height=5}
 ikea <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-11-03/ikea.csv')
 
-ggplotly(
+p <- ggplotly(
   ikea %>%
   mutate(price_usd = price * 0.27) %>%
   select(item_id, name, category, price_usd) %>% 
@@ -41,4 +41,18 @@ ggplotly(
                             y = 1200,
                             showarrow = F,
                             text = "Hover for more details!"))
+```
+
+```{r include, echo = FALSE}
+htmlwidgets::saveWidget(p, "index.html")
+
+htmltools::tags$iframe(
+  src=file.path(getwd(), "index.html"),
+  width="100%",
+  height="600",
+  scrolling="no",
+  seamless="seamless",
+  frameBorder="0"
+)
+
 ```
