@@ -33,7 +33,7 @@ hike_data %>%
     #theme(legend.position = "none") +
     labs( title = "Washington State Hikes",
           x = "Trail Length (Miles)",
-          y = "Washington State Park Regions",
+          y = "Washington State Regions",
           fill = "Difficulty Rating",
           caption = "Design: @KevinMagnan | Data: Washington Trails Assocation (wta.org)
           #TidyTuesday Week 48") + 
