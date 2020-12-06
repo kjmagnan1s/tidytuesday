@@ -1,6 +1,4 @@
----
-pagetitle: "Untitled"
----
+
 
 #TidyTuesday Exercises
 
