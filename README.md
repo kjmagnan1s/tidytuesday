@@ -1,8 +1,6 @@
-
-
 #TidyTuesday Exercises
 
-Repository for .R and .Rmd files for my participation in the #TidyTuesday community weekly data project. Each week (when I have some free time!), I explore the #TidyTuesday dataset with a new R {package} to grow my R skills and learn new methods of data manipulation and visualization. 
+Repository of .R and .Rmd files documenting my participation in the #TidyTuesday community weekly data project. Each week (when I have some free time!), I explore the #TidyTuesday dataset with a new R {package} to grow my R skills and learn new methods of data manipulation and visualization. 
 
 | Date | Topic | Code | Viz|
 | ------ | ------ | ------ | ------ |
