@@ -9,5 +9,5 @@ Repository for .R and .Rmd files for my participation in the #TidyTuesday commun
 | Date | Topic | Code | Viz|
 | ------ | ------ | ------ | ------ |
 | 11.03.2020 | IKEA Furniture | .[Rmd](Week_45/week_45.Rmd) | ![](Week_45/week_45_plot.png)
-| 11.10.2020 | USA Phone Subscriptions | .[Rmd](Week_46/week_46.R) | ![](Week_46/week_46_plot.png)
-| 11.24.2020 | Washington State Hikes | .[Rmd](Week_45/week_48.R) | ![](Week_48/week_48.png)
+| 11.10.2020 | USA Phone Subscriptions | .[R](Week_46/week_46.R) | ![](Week_46/week_46_plot.png)
+| 11.24.2020 | Washington State Hikes | .[R](Week_45/week_48.R) | ![](Week_48/week_48.png)
